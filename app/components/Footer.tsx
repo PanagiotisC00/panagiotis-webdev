@@ -18,11 +18,12 @@ export default function Footer() {
                   alt="Panagiotis Chrysanthou Logo"
                   width={32}
                   height={32}
-                  className="mr-2"
+                  className="mr-2 flex-shrink-0"
+                  style={{ verticalAlign: 'middle' }}
                 />
-                <p className="text-gray-400 text-sm font-mono">
+                <span className="text-gray-400 text-sm font-mono">
                   © {currentYear} Panagiotis Chrysanthou. All rights reserved.
-                </p>
+                </span>
               </div>
               <p className="text-gray-500 text-xs font-mono mt-1">
                 Full-Stack Web Developer

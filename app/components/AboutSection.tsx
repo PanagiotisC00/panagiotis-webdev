@@ -331,20 +331,9 @@ export default function AboutSection({ content }: { content: AboutContent }) {
               </Card>
             </TabsContent>
 
-            <TabsContent value="projects" className="mt-12 md:mt-12">
-              <div className="space-y-6">
-                <div className="text-center mb-8">
-                  <div className="inline-block bg-black border border-orange-400 rounded-lg p-4">
-                    <div className="font-mono text-orange-400 text-sm mb-2">
-                      <span className="text-gray-500">$</span> ls -la /research-projects
-                    </div>
-                    <h3 className="text-2xl font-bold text-white font-mono">
-                      {content.sections.additionalProjects.title}
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
+                         <TabsContent value="projects" className="mt-12 md:mt-12">
+               <div className="space-y-6">
+                 <div className="grid md:grid-cols-2 gap-6">
                   {content.sections.additionalProjects.projects.map((project, index) => (
                     <Card
                       key={index}
