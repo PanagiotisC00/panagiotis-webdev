@@ -61,7 +61,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
               <span className="text-gray-500">$</span> ./introduce --role=web-developer
             </div>
 
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent font-mono">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 pb-2 bg-gradient-to-r from-green-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent font-mono">
               {content.name}
             </h1>
 
