@@ -94,34 +94,34 @@ export default function AboutSection({ content }: { content: AboutContent }) {
           </div>
 
           <Tabs defaultValue="web-dev" className="w-full">
-            <TabsList className="flex w-full bg-black border border-gray-700 p-2 rounded-full">
+            <TabsList className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 w-full max-w-4xl mx-auto bg-transparent border-none p-0">
               <TabsTrigger
                 value="web-dev"
-                className="font-mono data-[state=active]:bg-green-600 data-[state=active]:text-black text-lg rounded-full px-4 py-1 transition-all duration-200"
+                className="font-mono data-[state=active]:bg-green-600 data-[state=active]:text-black bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs md:text-sm rounded-lg px-3 md:px-4 py-2 md:py-3 transition-all duration-200 border border-gray-600 hover:border-green-400 w-full"
               >
                 Web Dev
               </TabsTrigger>
               <TabsTrigger
                 value="advanced-tech"
-                className="font-mono data-[state=active]:bg-cyan-600 data-[state=active]:text-black text-lg rounded-full px-4 py-1 transition-all duration-200"
+                className="font-mono data-[state=active]:bg-cyan-600 data-[state=active]:text-black bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs md:text-sm rounded-lg px-3 md:px-4 py-2 md:py-3 transition-all duration-200 border border-gray-600 hover:border-cyan-400 w-full"
               >
                 Advanced Tech
               </TabsTrigger>
               <TabsTrigger
                 value="education"
-                className="font-mono data-[state=active]:bg-purple-600 data-[state=active]:text-black text-lg rounded-full px-4 py-1 transition-all duration-200"
+                className="font-mono data-[state=active]:bg-purple-600 data-[state=active]:text-black bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs md:text-sm rounded-lg px-3 md:px-4 py-2 md:py-3 transition-all duration-200 border border-gray-600 hover:border-purple-400 w-full"
               >
                 Education
               </TabsTrigger>
               <TabsTrigger
                 value="projects"
-                className="font-mono data-[state=active]:bg-orange-600 data-[state=active]:text-black text-lg rounded-full px-4 py-1 transition-all duration-200"
+                className="font-mono data-[state=active]:bg-orange-600 data-[state=active]:text-black bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs md:text-sm rounded-lg px-3 md:px-4 py-2 md:py-3 transition-all duration-200 border border-gray-600 hover:border-orange-400 w-full"
               >
                 Other Projects
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="web-dev" className="mt-8">
+            <TabsContent value="web-dev" className="mt-12 md:mt-12">
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Web Development Experience */}
                 <Card className="bg-black border-green-400 border-2">
@@ -199,7 +199,7 @@ export default function AboutSection({ content }: { content: AboutContent }) {
               </div>
             </TabsContent>
 
-            <TabsContent value="advanced-tech" className="mt-8">
+            <TabsContent value="advanced-tech" className="mt-12 md:mt-12">
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 {/* Advanced Tech Experience */}
                 <Card className="bg-black border-cyan-400 border-2">
@@ -298,7 +298,7 @@ export default function AboutSection({ content }: { content: AboutContent }) {
               </div>
             </TabsContent>
 
-            <TabsContent value="education" className="mt-8">
+            <TabsContent value="education" className="mt-12 md:mt-12">
               <Card className="bg-black border-purple-400 border-2">
                 <CardHeader>
                   <div className="flex items-center mb-4">
@@ -331,7 +331,7 @@ export default function AboutSection({ content }: { content: AboutContent }) {
               </Card>
             </TabsContent>
 
-            <TabsContent value="projects" className="mt-8">
+            <TabsContent value="projects" className="mt-12 md:mt-12">
               <div className="space-y-6">
                 <div className="text-center mb-8">
                   <div className="inline-block bg-black border border-orange-400 rounded-lg p-4">
