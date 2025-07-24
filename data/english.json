@@ -20,7 +20,7 @@
         "description": "Professional bilingual website for aluminum fabrication services in Cyprus. Features modern design, multilingual support, and comprehensive service showcase for the aluminum industry.",
         "technologies": ["Next.js", "Tailwind CSS", "Vercel", "Responsive", "Modern", "SEO Optimized"],
         "liveUrl": "https://aluminum-craft-fasouliotis.vercel.app/",
-        "image": "/placeholder.svg?height=300&width=500&text=Aluminum+Craft+Website",
+        
         "features": ["Bilingual support", "Service showcase", "Contact forms", "Mobile responsive"]
       },
       {

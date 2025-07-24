@@ -5,6 +5,7 @@ import WebPortfolioSection from "./components/WebPortfolioSection"
 import AboutSection from "./components/AboutSection"
 
 import ContactSection from "./components/ContactSection"
+import Footer from "./components/Footer"
 
 async function getContent() {
   const filePath = path.join(process.cwd(), "data", "english.json")
@@ -22,6 +23,7 @@ export default async function Home() {
       <AboutSection content={content.about} />
 
       <ContactSection content={content.contact} />
+      <Footer />
     </main>
   )
 }
