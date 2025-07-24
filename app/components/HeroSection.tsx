@@ -25,7 +25,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
         <div className="absolute top-20 left-10 text-green-400/20 font-mono text-sm animate-pulse">
           {"const webDeveloper = {"}
           <br />
-          {'  name: "Alex Thompson",'}
+          {'  name: "Panagiotis Chrysanthou",'}
           <br />
           {'  stack: ["Next.js", "Supabase"],'}
           <br />
