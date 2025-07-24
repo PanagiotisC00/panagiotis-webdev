@@ -37,7 +37,7 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Panagiotis Chrysanthou",
     "jobTitle": "Full-Stack Web Developer",
-    "url": "https://panagiotis-portfolio.vercel.app",
+    "url": "https://your-actual-domain.com",
     "email": "panagiotischrysanthou2@gmail.com",
     "sameAs": [
       "https://github.com/PanagiotisC00"
