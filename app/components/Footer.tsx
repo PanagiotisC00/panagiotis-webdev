@@ -12,22 +12,23 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-start mb-2">
-                <Image
-                  src="/terminal_logo.png"
-                  alt="Panagiotis Chrysanthou Logo"
-                  width={32}
-                  height={32}
-                  className="mr-2 flex-shrink-0"
-                  style={{ verticalAlign: 'middle' }}
-                />
+              <div className="text-center md:text-left mb-2">
                 <span className="text-gray-400 text-sm font-mono">
                   © {currentYear} Panagiotis Chrysanthou. All rights reserved.
                 </span>
               </div>
-              <p className="text-gray-500 text-xs font-mono mt-1">
-                Full-Stack Web Developer
-              </p>
+              <div className="flex items-center justify-center md:justify-start">
+                <Image
+                  src="/terminal_logo.png"
+                  alt="Panagiotis Chrysanthou Logo"
+                  width={24}
+                  height={24}
+                  className="mr-2 flex-shrink-0"
+                />
+                <p className="text-gray-500 text-xs font-mono">
+                  Full-Stack Web Developer
+                </p>
+              </div>
             </div>
 
             {/* Social Links */}
