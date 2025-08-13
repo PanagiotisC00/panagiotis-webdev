@@ -10,27 +10,78 @@
       "secondary": "Get In Touch"
     }
   },
-      "webPortfolio": {
-      "title": "Web Applications Portfolio",
+  "webPortfolio": {
+    "title": "Web Applications Portfolio",
     "subtitle": "Web applications and research projects showcasing diverse technical expertise",
     "projects": [
       {
         "id": 1,
         "title": "Aluminum Craft Website",
         "description": "Professional bilingual website for aluminum fabrication services in Cyprus. Features modern design, multilingual support, and comprehensive service showcase for the aluminum industry.",
-        "technologies": ["Next.js", "Tailwind CSS", "Vercel", "Responsive", "Modern", "SEO Optimized"],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Vercel",
+          "Responsive",
+          "Modern",
+          "SEO Optimized"
+        ],
         "liveUrl": "https://aluminum-craft-fasouliotis.vercel.app/",
-        
-        "features": ["Bilingual support", "Service showcase", "Contact forms", "Mobile responsive"]
+        "features": [
+          "Bilingual support",
+          "Service showcase",
+          "Contact forms",
+          "Mobile responsive"
+        ]
       },
       {
         "id": 2,
         "title": "Kids Soccer School",
         "description": "Bilingual website for Kids Soccer School - A modern, responsive website for a youth soccer academy in Cyprus. Features English/Greek translation and comprehensive academy information.",
-        "technologies": ["Next.js", "Tailwind CSS", "Supabase-PostgreSQL", "Prisma ORM", "Vercel", "Responsive", "Modern", "SEO Optimized", "Secure"],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Supabase-PostgreSQL",
+          "Prisma ORM",
+          "Vercel",
+          "Responsive",
+          "Modern",
+          "SEO Optimized",
+          "Secure"
+        ],
         "liveUrl": "https://kidssoccerschool.vercel.app/",
         "image": "/placeholder.svg?height=300&width=500&text=Kids+Soccer+School",
-        "features": ["Bilingual support", "Database integration", "Secure authentication", "Mobile responsive"]
+        "features": [
+          "Bilingual support",
+          "Database integration",
+          "Secure authentication",
+          "Mobile responsive"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Pawsome Grooming Cyprus",
+        "description": "Modern pet grooming business website with comprehensive admin dashboard. A multilingual business website built for a professional pet grooming service, featuring complete customer-facing website and administrative dashboard for business management.",
+        "technologies": [
+          "Next.js 15",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS v4",
+          "Radix UI",
+          "shadcn/ui",
+          "Vercel",
+          "SEO Optimized",
+          "Responsive"
+        ],
+        "liveUrl": "https://pawsome-grooming.vercel.app/",
+        "features": [
+          "Bilingual support (English & Greek)",
+          "Online booking system with dynamic pricing",
+          "Admin dashboard with business analytics",
+          "Before/after photo gallery",
+          "SEO optimized with OpenGraph",
+          "Mobile-first responsive design"
+        ]
       }
     ]
   },
@@ -43,9 +94,25 @@
         "experience": "Professional software engineering experience",
         "description": "Specialized in building modern web applications using Next.js, TypeScript, and Tailwind CSS. Experience includes bilingual websites, backend APIs, database integration, and comprehensive testing frameworks.",
         "skills": {
-          "frontend": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-          "backend": ["Node.js", "Python", "PostgreSQL", "Supabase", "Prisma ORM", "REST APIs"],
-          "cloud": ["Vercel", "Docker", "CI/CD"]
+          "frontend": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Tailwind CSS"
+          ],
+          "backend": [
+            "Node.js",
+            "Python",
+            "PostgreSQL",
+            "Supabase",
+            "Prisma ORM",
+            "REST APIs"
+          ],
+          "cloud": [
+            "Vercel",
+            "Docker",
+            "CI/CD"
+          ]
         },
         "achievements": [
           "Developed bilingual websites for international businesses",
@@ -62,18 +129,38 @@
         "domains": {
           "networking": {
             "title": "5G Cellular Networks & Testbeds",
-            "skills": ["5G NR", "5G CN", "Edge Computing", "OpenAirInterface", "Testbed Development"],
+            "skills": [
+              "5G NR",
+              "5G CN",
+              "Edge Computing",
+              "OpenAirInterface",
+              "Testbed Development"
+            ],
             "experience": "Led development of 5G testbed infrastructure for autonomous vehicle communication"
           },
           "autonomous": {
             "title": "Connected Autonomous Vehicles",
-            "skills": ["V2V Communication", "V2I Communication", "I2V Communication", "Real-time Systems"],
+            "skills": [
+              "V2V Communication",
+              "V2I Communication",
+              "I2V Communication",
+              "Real-time Systems"
+            ],
             "experience": "Developed communication protocols based on ETSI standards for vehicle-to-vehicle (V2V), vehicle-to-infrastructure (V2I), and infrastructure-to-vehicle (I2V) systems across multiple scenarios"
           },
-
           "ml": {
             "title": "Machine Learning & Computer Vision",
-            "skills": ["Python", "YOLO", "Computer Vision", "Object Detection", "PyTorch", "Ultralytics", "OpenCV", "LSTM", "Cellular Network Analysis"],
+            "skills": [
+              "Python",
+              "YOLO",
+              "Computer Vision",
+              "Object Detection",
+              "PyTorch",
+              "Ultralytics",
+              "OpenCV",
+              "LSTM",
+              "Cellular Network Analysis"
+            ],
             "experience": "Developed state-of-the-art drone detection models using YOLO and implemented LSTM-based cellular network traffic prediction systems"
           }
         },
@@ -105,39 +192,62 @@
           {
             "title": "Cellular Network Traffic Prediction",
             "description": "Developed machine learning models using Python to predict cellular network traffic patterns, improving network resource allocation and performance optimization.",
-            "technologies": ["Python", "Machine Learning", "Network Analysis", "Data Science"],
+            "technologies": [
+              "Python",
+              "Machine Learning",
+              "Network Analysis",
+              "Data Science"
+            ],
             "domain": "Telecommunications"
           },
           {
             "title": "RPL Attack Detection System",
             "description": "Created an intelligent attack detection system for modified RPL (Routing Protocol for Low-Power and Lossy Networks) using machine learning algorithms.",
-            "technologies": ["Python", "Machine Learning", "Network Security", "IoT Protocols"],
+            "technologies": [
+              "Python",
+              "Machine Learning",
+              "Network Security",
+              "IoT Protocols"
+            ],
             "domain": "Network Security"
           },
-
           {
             "title": "Gym Management Android App",
             "description": "Developed a comprehensive Android application for gym users featuring workout tracking, progress monitoring, and social features.",
-            "technologies": ["Android", "Java", "SQLite", "Mobile Development"],
+            "technologies": [
+              "Android",
+              "Java",
+              "SQLite",
+              "Mobile Development"
+            ],
             "domain": "Mobile Applications"
           },
           {
             "title": "Car Mechanic Desktop Application",
             "description": "Built a Windows desktop application for car mechanics to manage customer records, service history, and inventory management.",
-            "technologies": ["C#", ".NET", "Windows Forms", "SQL Server"],
+            "technologies": [
+              "C#",
+              ".NET",
+              "Windows Forms",
+              "SQL Server"
+            ],
             "domain": "Desktop Applications"
           },
           {
             "title": "MIPS32 Processor Simulator",
             "description": "Implemented an in-order multiple issue MIPS32 processor simulator with pipeline visualization and performance analysis capabilities.",
-            "technologies": ["C++", "Computer Architecture", "Assembly Language", "Performance Analysis"],
+            "technologies": [
+              "C++",
+              "Computer Architecture",
+              "Assembly Language",
+              "Performance Analysis"
+            ],
             "domain": "Computer Architecture"
           }
         ]
       }
     }
   },
-
   "contact": {
     "title": "Let's Build Something Amazing",
     "subtitle": "Ready to collaborate on innovative projects?",
