@@ -108,6 +108,16 @@ export default function HeroSection({ content }: { content: HeroContent }) {
                   {content.cta.secondary}
                 </Link>
               </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-8 py-3 text-lg bg-transparent font-mono"
+              >
+                <Link href="https://bytebrief.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  My Tech News Blog
+                </Link>
+              </Button>
             </div>
 
             <div className="flex justify-center space-x-8">
@@ -119,7 +129,7 @@ export default function HeroSection({ content }: { content: HeroContent }) {
               </Link>
               <Link
                 href="mailto:panagiotischrysanthou2@gmail.com"
-                className="text-gray-400 hover:text-yellow-400 transition-colors group"
+                className="text-gray-400 hover:text-purple-400 transition-colors group"
               >
                 <Mail className="h-8 w-8 group-hover:animate-pulse" />
               </Link>

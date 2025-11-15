@@ -82,6 +82,31 @@
           "SEO optimized with OpenGraph",
           "Mobile-first responsive design"
         ]
+      },
+      {
+        "id": 4,
+        "title": "ByteBrief Blog",
+        "description": "Modern tech blog platform with comprehensive admin dashboard. A full-stack blog platform featuring public site and admin dashboard for content management, news aggregation, and SEO optimization with role-based access control.",
+        "technologies": [
+          "Next.js 14",
+          "React 18",
+          "TypeScript",
+          "PostgreSQL",
+          "Prisma ORM",
+          "Tailwind CSS v4",
+          "NextAuth.js",
+          "Radix UI",
+          "shadcn/ui"
+        ],
+        "liveUrl": "https://bytebrief.vercel.app/",
+        "features": [
+          "Admin dashboard with role-based access",
+          "Dynamic blog system with categories and tags",
+          "News aggregation with filtering",
+          "Google OAuth + credentials authentication",
+          "SEO optimized with OpenGraph and sitemaps",
+          "Mobile-first responsive design with dark mode"
+        ]
       }
     ]
   },
