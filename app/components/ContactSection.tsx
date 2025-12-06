@@ -85,9 +85,9 @@ export default function ContactSection({ content }: { content: ContactContent })
                     Project consultation: FREE
                   </p>
                   <Button asChild className="w-full bg-cyan-600 hover:bg-cyan-700 text-black font-mono">
-                    <a href={`mailto:${content.email}`}>
-                      <Mail className="h-4 w-4 mr-2" />
-                      {content.email}
+                    <a href={`mailto:${content.email}`} className="flex items-center justify-center w-full px-2">
+                      <Mail className="h-4 w-4 mr-2 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm break-all">{content.email}</span>
                     </a>
                   </Button>
                 </CardContent>

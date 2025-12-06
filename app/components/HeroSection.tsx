@@ -121,22 +121,50 @@ export default function HeroSection({ content }: { content: HeroContent }) {
             </div>
 
             <div className="flex justify-center space-x-8">
-              <Link href="https://github.com/PanagiotisC00" className="text-gray-400 hover:text-green-400 transition-colors group">
+              <Link
+                href="https://github.com/PanagiotisC00"
+                className="text-gray-400 hover:text-green-400 transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="h-8 w-8 group-hover:animate-pulse" />
               </Link>
-              <Link href="https://linkedin.com" className="text-gray-400 hover:text-cyan-400 transition-colors group">
+              <Link
+                href="https://linkedin.com"
+                className="text-gray-400 hover:text-cyan-400 transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="h-8 w-8 group-hover:animate-pulse" />
               </Link>
               <Link
                 href="mailto:panagiotischrysanthou2@gmail.com"
                 className="text-gray-400 hover:text-purple-400 transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Mail className="h-8 w-8 group-hover:animate-pulse" />
+              </Link>
+              <Link
+                href="https://scholar.google.com"
+                className="text-gray-400 hover:text-[#D2B48C] transition-colors font-mono text-sm border-b border-transparent hover:border-[#D2B48C]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Scholar
+              </Link>
+              <Link
+                href="https://orcid.org/0009-0000-1798-0314"
+                className="text-gray-400 hover:text-[#808000] transition-colors font-mono text-sm border-b border-transparent hover:border-[#808000]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ORCID
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }

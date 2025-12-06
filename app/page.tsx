@@ -10,7 +10,14 @@ import Footer from "./components/Footer"
 async function getContent() {
   const filePath = path.join(process.cwd(), "data", "english.json")
   const fileContents = await fs.readFile(filePath, "utf8")
-  return JSON.parse(fileContents)
+
+  const publicationsPath = path.join(process.cwd(), "data", "publications.json")
+  const publicationsContents = await fs.readFile(publicationsPath, "utf8")
+
+  return {
+    ...JSON.parse(fileContents),
+    publications: JSON.parse(publicationsContents)
+  }
 }
 
 export default async function Home() {
@@ -20,7 +27,7 @@ export default async function Home() {
     <main className="min-h-screen bg-black">
       <HeroSection content={content.hero} />
       <WebPortfolioSection content={content.webPortfolio} />
-      <AboutSection content={content.about} />
+      <AboutSection content={content.about} publications={content.publications} />
 
       <ContactSection content={content.contact} />
       <Footer />

@@ -13,6 +13,8 @@ import {
   Brain,
   GraduationCap,
   Folder,
+  BookOpen,
+  ExternalLink,
 } from "lucide-react"
 
 interface AboutContent {
@@ -74,7 +76,13 @@ interface AboutContent {
   }
 }
 
-export default function AboutSection({ content }: { content: AboutContent }) {
+interface Publication {
+  title: string
+  abstract: string
+  link: string
+}
+
+export default function AboutSection({ content, publications }: { content: AboutContent; publications: Publication[] }) {
   return (
     <section className="py-20 bg-gray-900 relative">
       {/* Tech Pattern Background */}
@@ -94,7 +102,7 @@ export default function AboutSection({ content }: { content: AboutContent }) {
           </div>
 
           <Tabs defaultValue="web-dev" className="w-full">
-            <TabsList className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 w-full max-w-4xl mx-auto bg-transparent border-none p-0">
+            <TabsList className="grid grid-cols-1 md:grid-cols-5 gap-2 md:gap-4 w-full max-w-5xl mx-auto bg-transparent border-none p-0 h-auto">
               <TabsTrigger
                 value="web-dev"
                 className="font-mono data-[state=active]:bg-green-600 data-[state=active]:text-black bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs md:text-sm rounded-lg px-3 md:px-4 py-2 md:py-3 transition-all duration-200 border border-gray-600 hover:border-green-400 w-full"
@@ -106,6 +114,12 @@ export default function AboutSection({ content }: { content: AboutContent }) {
                 className="font-mono data-[state=active]:bg-cyan-600 data-[state=active]:text-black bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs md:text-sm rounded-lg px-3 md:px-4 py-2 md:py-3 transition-all duration-200 border border-gray-600 hover:border-cyan-400 w-full"
               >
                 Advanced Tech
+              </TabsTrigger>
+              <TabsTrigger
+                value="research-publications"
+                className="font-mono data-[state=active]:bg-[#D2B48C] data-[state=active]:text-black bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs md:text-sm rounded-lg px-3 md:px-4 py-2 md:py-3 transition-all duration-200 border border-gray-600 hover:border-[#D2B48C] w-full"
+              >
+                Research Publications
               </TabsTrigger>
               <TabsTrigger
                 value="education"
@@ -296,6 +310,72 @@ export default function AboutSection({ content }: { content: AboutContent }) {
                   </div>
                 </div>
               </div>
+
+            </TabsContent>
+
+            <TabsContent value="research-publications" className="mt-12 md:mt-12 relative">
+              {/* Sticky Info Bubble */}
+              <div className="sticky top-4 z-20 mb-8 flex justify-end">
+                <div className="bg-gray-900/90 backdrop-blur-sm border border-[#D2B48C] rounded-full px-6 py-2 shadow-lg shadow-[#D2B48C]/10 flex items-center gap-4">
+                  <span className="text-[#D2B48C] font-mono text-xs mr-2 border-r border-gray-700 pr-4 hidden sm:inline-block">
+                    Research Profiles
+                  </span>
+                  <a
+                    href="https://scholar.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-[#D2B48C] transition-colors font-mono text-xs md:text-sm flex items-center gap-2"
+                  >
+                    Google Scholar
+                  </a>
+                  <a
+                    href="https://orcid.org/0009-0000-1798-0314"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-[#808000] transition-colors font-mono text-xs md:text-sm flex items-center gap-2"
+                  >
+                    ORCID
+                  </a>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                {publications?.map((pub, index) => (
+                  <Card key={index} className="bg-black border-[#D2B48C] border-2">
+                    <CardHeader>
+                      <div className="flex items-center mb-4">
+                        <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                        <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+                        <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                        <span className="text-gray-400 font-mono text-sm ml-2">publication_{index + 1}.tex</span>
+                      </div>
+                      <CardTitle className="text-[#D2B48C] font-mono flex items-center">
+                        <BookOpen className="h-6 w-6 mr-3 flex-shrink-0" />
+                        {pub.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="font-mono text-[#D2B48C] text-sm mb-2">
+                        <span className="text-gray-500">$</span> cat abstract.txt
+                      </div>
+                      <p className="text-gray-300 mb-6">{pub.abstract}</p>
+
+                      <div className="font-mono text-[#D2B48C] text-sm mb-2">
+                        <span className="text-gray-500">$</span> open link
+                      </div>
+                      <a
+                        href={pub.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-[#D2B48C] hover:text-[#C1A47B] font-mono text-sm border border-[#D2B48C] rounded px-3 py-2 hover:bg-[#D2B48C]/30 transition-colors"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        View Publication
+                      </a>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </TabsContent>
 
             <TabsContent value="education" className="mt-12 md:mt-12">
@@ -331,9 +411,9 @@ export default function AboutSection({ content }: { content: AboutContent }) {
               </Card>
             </TabsContent>
 
-                         <TabsContent value="projects" className="mt-12 md:mt-12">
-               <div className="space-y-6">
-                 <div className="grid md:grid-cols-2 gap-6">
+            <TabsContent value="projects" className="mt-12 md:mt-12">
+              <div className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
                   {content.sections.additionalProjects.projects.map((project, index) => (
                     <Card
                       key={index}
@@ -384,6 +464,6 @@ export default function AboutSection({ content }: { content: AboutContent }) {
           </Tabs>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
